@@ -1,0 +1,104 @@
+Source: kdiagram
+Section: libs
+Priority: optional
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: Pino Toscano <pino@debian.org>,
+Build-Depends:
+ cmake (>= 2.8.12),
+ debhelper-compat (= 13),
+ extra-cmake-modules (>= 5.60.0~),
+ libqt5svg5-dev,
+ qtbase5-dev (>= 5.12.0~),
+ qttools5-dev,
+ qttools5-dev-tools,
+ xauth,
+ xvfb
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Vcs-Git: https://salsa.debian.org/qt-kde-team/extras/kdiagram.git
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/extras/kdiagram
+Homepage: https://cgit.kde.org/kdiagram.git
+
+Package: libkchart-dev
+Architecture: any
+Section: libdevel
+Multi-Arch: same
+Depends:
+ libkchart2 (= ${binary:Version}),
+ libqt5svg5-dev,
+ qtbase5-dev (>= 5.2),
+ ${misc:Depends}
+Description: library for creating business charts (development files)
+ KD Charts provides an implementation of the ODF Chart specification. It
+ supports stock charts, box charts, and whisker charts and allows one to
+ integrate these charts in Qt-based applications.
+ .
+ This package contains the development files.
+
+Package: libkchart2
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Recommends:
+ libkchart2-l10n (= ${binary:Version})
+Description: library for creating business charts (shared library)
+ KD Charts provides an implementation of the ODF Chart specification. It
+ supports stock charts, box charts, and whisker charts and allows one to
+ integrate these charts in Qt-based applications.
+ .
+ This package contains the shared library.
+
+Package: libkchart2-l10n
+Section: localization
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends}
+Description: library for creating business charts (translation)
+ KD Charts provides an implementation of the ODF Chart specification. It
+ supports stock charts, box charts, and whisker charts and allows one to
+ integrate these charts in Qt-based applications.
+ .
+ This package contains translations.
+
+Package: libkgantt-dev
+Architecture: any
+Section: libdevel
+Multi-Arch: same
+Depends:
+ libkgantt2 (= ${binary:Version}),
+ qtbase5-dev (>= 5.2),
+ ${misc:Depends}
+Description: library for creating Gantt diagrams (development files)
+ Gantt charts are a bar charts that illustrate project schedules. KD Gantt
+ provides a module for implementing ODF Gantt charts in Qt-based applications.
+ .
+ This package contains the development files.
+
+Package: libkgantt2
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Recommends:
+ libkgantt2-l10n (= ${binary:Version})
+Description: library for creating Gantt diagrams (shared library)
+ Gantt charts are a bar charts that illustrate project schedules. KD Gantt
+ provides a module for implementing ODF Gantt charts in Qt-based applications.
+ .
+ This package contains the shared library.
+
+Package: libkgantt2-l10n
+Section: localization
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends}
+Description: library for creating Gantt diagrams (translations)
+ Gantt charts are a bar charts that illustrate project schedules. KD Gantt
+ provides a module for implementing ODF Gantt charts in Qt-based applications.
+ .
+ This package contains translations.

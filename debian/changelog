@@ -1,0 +1,115 @@
+kdiagram (2.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update the build dependencies according to the upstream build system:
+    - bump qtbase5-dev to 5.12.0
+    - bump extra-cmake-modules to 5.60.0
+  * Update symbols files.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 17 Jan 2021 12:45:36 +0100
+
+kdiagram (2.7.0-2) unstable; urgency=medium
+
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper-compat build dependency to 13
+    - stop passing --fail-missing to dh_missing, as it is the default now
+  * Bump Standards-Version to 4.5.1, no changes required.
+  * Add Rules-Requires-Root: no.
+  * Use correct machine-readable copyright file URI.
+  * Update symbols files. (Closes: #975186)
+
+ -- Pino Toscano <pino@debian.org>  Sun, 22 Nov 2020 14:47:59 +0100
+
+kdiagram (2.7.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update the patches:
+    - test-increased-timeout.diff: drop, fixed upstream
+  * Update symbols files.
+
+ -- Pino Toscano <pino@debian.org>  Tue, 21 Apr 2020 10:00:12 +0200
+
+kdiagram (2.6.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 13 Apr 2020 00:28:08 +0200
+
+kdiagram (2.6.2-4) unstable; urgency=medium
+
+  * Update test-increased-timeout.diff to increase the timeouts to 60 minutes,
+    hopefully it should be enough also for really slow architectures...
+
+ -- Pino Toscano <pino@debian.org>  Sun, 29 Mar 2020 18:37:26 +0200
+
+kdiagram (2.6.2-3) unstable; urgency=medium
+
+  * Update test-increased-timeout.diff to increase also the QtTest default
+    timeout to 30 minutes.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 29 Mar 2020 11:51:38 +0200
+
+kdiagram (2.6.2-2) unstable; urgency=medium
+
+  * Update test-increased-timeout.diff to use a better (and hopefully working)
+    API for changing the test timeout.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 29 Mar 2020 00:24:36 +0100
+
+kdiagram (2.6.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add the configuration for the CI on salsa.
+  * Update Vcs-* fields.
+  * Update symbols files.
+  * Increase the timeout for TestDrawIntoPainter to 30 minutes, so even slower
+    architectures should run it successfully. (Closes: 947492)
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Bump Standards-Version to 4.5.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 28 Mar 2020 23:21:54 +0100
+
+kdiagram (2.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update path in watch file.
+  * Update symbols files from logs of buildds, and removing private symbols
+    no more exposed.
+  * Adopt under the Debian KDE Extras Team wing, with myself as Uploader.
+    (Closes: #874391)
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Bump Standards-Version to 4.1.4, no changes required.
+  * Pass --fail-missing to dh_missing.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 21 Apr 2018 07:42:07 +0200
+
+kdiagram (2.6.0-3) unstable; urgency=medium
+
+  * QA upload.
+  * Add symbols files, and thus remove the dh_makeshlibs -V invocation.
+  * Tweak install files to catch potential SONAME bumps.
+  * Simplify watch file, and switch it to https.
+  * Use https for Format in copyright.
+  * Bump Standards-Version to 4.1.3, no changes required.
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+
+ -- Pino Toscano <pino@debian.org>  Thu, 22 Mar 2018 09:10:54 +0100
+
+kdiagram (2.6.0-2) unstable; urgency=medium
+
+  * QA upload.
+  * Set maintainer to the QA group.
+  * Build-Depend on qttools5-dev. (Closes: #881079)
+
+ -- Adam Borowski <kilobyte@angband.pl>  Wed, 15 Nov 2017 05:07:55 +0100
+
+kdiagram (2.6.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #847782)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 14 Dec 2016 20:48:16 +0100

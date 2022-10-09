@@ -1,0 +1,12 @@
+#! /usr/bin/make -f
+
+export DEB_LDFLAGS_MAINT_APPEND=-Wl,--as-needed
+
+%:
+	dh $@
+
+override_dh_auto_test-arch:
+	xvfb-run -a dh_auto_test -a
+
+# no tests for -indep
+override_dh_auto_test-indep:

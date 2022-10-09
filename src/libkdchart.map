@@ -1,0 +1,16 @@
+VERSION
+{
+	local:
+	extern "C++"
+	{
+		KChart::*::Private::*;
+		KChart::*::Private?virtual?table;
+		KChart::*::Private?type_info?node;
+		KChart::*::Private?type_info?name;
+		KChart::*::Private?type_info?function;
+		vtable?for?KChart::*::Private;
+		typeinfo?for?KChart::*::Private;
+		typeinfo?name?for?KChart::*::Private;
+		non-virtual?thunk?to?KChart::*::Private;
+	};
+};

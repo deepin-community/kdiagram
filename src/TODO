@@ -1,0 +1,12 @@
+cleanup:
+--------
+
+KChartArea -> KChart::Area
+
+KChartAxis?
+
+KChartCustomArea?
+
+KTextDocument ?
+
+KChartMeasure ?

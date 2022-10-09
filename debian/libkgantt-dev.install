@@ -1,0 +1,5 @@
+usr/include/KGantt
+usr/include/kgantt_*.h
+usr/lib/*/cmake/KGantt
+usr/lib/*/libKGantt.so
+usr/lib/*/qt5/mkspecs/modules/qt_KGantt.pri

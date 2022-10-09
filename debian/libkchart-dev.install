@@ -1,0 +1,5 @@
+usr/include/KChart
+usr/include/kchart_*.h
+usr/lib/*/cmake/KChart
+usr/lib/*/libKChart.so
+usr/lib/*/qt5/mkspecs/modules/qt_KChart.pri
