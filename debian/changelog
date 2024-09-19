@@ -1,3 +1,9 @@
+kdiagram (2.8.0-1deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:50:56 +0800
+
 kdiagram (2.8.0-1) unstable; urgency=medium
 
   * New upstream release.
